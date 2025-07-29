@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 model = YOLO('best.pt')  
-results=model("../images/64.jpeg")
+results=model("images/1.jpeg")
 results[0].save()
 # if you want to get coordinates
 boxes = results[0].boxes
